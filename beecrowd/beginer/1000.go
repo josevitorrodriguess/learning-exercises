@@ -2,7 +2,7 @@ package beginer
 
 import "fmt"
 
-func ex1000() {
+func HelloWorld() {
 	fmt.Println("Hello Word")
 }
 

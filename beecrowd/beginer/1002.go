@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func ex1002() {
+func AreaOfCircle() {
 
 	n := 3.14159
 

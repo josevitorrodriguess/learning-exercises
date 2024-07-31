@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func ex1003() {
+func SimpleSum() {
 	var A, B int
 
 	fmt.Scanf("%d", &A)

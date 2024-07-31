@@ -4,7 +4,7 @@ import (
     "fmt"
 )
  
-func ex1001() {
+func ExtremelyBasic() {
 
  var a, b int
 

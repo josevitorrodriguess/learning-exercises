@@ -1,0 +1,6 @@
+package beginer
+
+
+func Consuption() {
+	
+}

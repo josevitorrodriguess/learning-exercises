@@ -1,20 +1,27 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func main() {
-	var a, b, c int
-	fmt.Scan(&a, &b, &c)
 
-	// Function to calculate the greater of two numbers
-	maiorAB := (a + b + int(math.Abs(float64(a-b)))) / 2
+	fmt.Print(romanToInt("III"))
+}
 
-	// Calculate the greatest of the three numbers
-	maiorABC := (maiorAB + c + int(math.Abs(float64(maiorAB-c)))) / 2
+func romanToInt(s string) int {
+	m := map[string]int{"I": 1, "V": 2, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
-	// Print the result with the required message
-	fmt.Printf("%d eh o maior\n", maiorABC)
+	number := 0
+	i := 0
+	n := len(s)
+
+	for i < n {
+		if i < n && m[string(s[i])] < m[string(s[i+1])] {
+			number += m[string(s[i])] - m[string(s[i+1])]
+		} else {
+			number += m[string(s[i])]
+		}
+
+	}
+
+	return number
 }
